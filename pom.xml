@@ -4,6 +4,7 @@
   <artifactId>WizeLineSauceSitePOM_AId</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>WizeLineSauceSitePOM</name>
+  
   <dependencies>
   
 	<dependency>

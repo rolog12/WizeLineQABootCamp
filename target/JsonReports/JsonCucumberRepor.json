@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Check LOGIN is successful with a valid credentials",
+        "description": "",
+        "id": "test-saucedemo-website---wizeline-qa-automation-bootcamp;check-login-is-successful-with-a-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3471647200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on LOGIN page Scenario",
+            "match": {
+              "location": "LoginStep.user_is_on_LOGIN_page_Scenario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 341530200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter userName and password",
+            "match": {
+              "location": "LoginStep.user_enter_userName_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193076000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks on LOGIN button",
+            "match": {
+              "location": "LoginStep.clicks_on_LOGIN_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193295000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "you are in products page",
+            "match": {
+              "location": "LoginStep.you_are_in_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@LogInSauceWebSite"
+          }
+        ]
+      }
+    ],
+    "name": "Test sauceDemo WebSite - WizeLine QA Automation BootCamp",
+    "description": "",
+    "id": "test-saucedemo-website---wizeline-qa-automation-bootcamp",
+    "keyword": "Feature",
+    "uri": "scenariosGherkin.feature"
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="4.199548">
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGIN is successful with a valid credentials" time="4.199548">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then you are in products page...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
