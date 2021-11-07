@@ -15,7 +15,9 @@ import cucumber.api.junit.Cucumber;
 				"json:target/JsonReports/JsonCucumberRepor.json",
 				"junit:target/JunitReports/JunitCucumberReport.xml",
 		},
-		tags = {"@LogInSauceWebSite"}		)
+		tags = {"@LogInSauceWebSite,@invalidLogin,@LogOut"} //,@invalidLogin
+		)
 public class RunnerClass {
 
+	
 }

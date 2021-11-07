@@ -14,13 +14,14 @@ Scenario: Check LOGIN is not successful invalid credentials
     When user enter userName and wrong password
     And clicks on LOGIN button
     Then an error message is displayed
-@LogOut  
+@LogOut
 Scenario: Check LOGOUT is successful
 
     Given user is on LOGIN page Scenario
     When user enter userName and password
     And clicks on LOGIN button
-    Then User is Logging Off
+    Then User going to Logg Off
+    And user is on Login Page
     
 @SortedByPrice    
 Scenario: Check products is sorted by price lowToHigh

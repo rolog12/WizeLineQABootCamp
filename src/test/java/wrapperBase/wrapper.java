@@ -13,14 +13,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class wrapper {
 	
-	 WebDriver driver_wrapper;
+	 static WebDriver driver_wrapper;
 	
-	// SetUp WebDriver InterFace
-	public wrapper(WebDriver driver_wrapper) {
-	//public WebDriver getDriver() {
-		this.driver_wrapper=driver_wrapper;
-	}
-	// Set up Browser
+	 
+	
 	public 	WebDriver chromeDriverSetUp () {
 		
 		if (driver_wrapper==null) {
@@ -29,8 +25,14 @@ public class wrapper {
 	}		
 		return driver_wrapper;
 	}
+	
+	//get the URL
+	public void getCurrentURL () {
+		driver_wrapper.getCurrentUrl();
+	}
+	
 	// navigate to the URL
-	public void getTheUrl (String TheUrl) {
+	public void goToTheUrl (String TheUrl) {
 		driver_wrapper.navigate().to(TheUrl);
 		driver_wrapper.manage().window().maximize();
 	}
@@ -61,9 +63,13 @@ public class wrapper {
 	public void writeText(By locator, String InputText) {
 		driver_wrapper.findElement(locator).sendKeys(InputText);
 	}
-	//Assertion
-	public void assertValidation (String ThisTextisEqualsTo, By anotherText_locator) {
-		Assert.assertEquals(ThisTextisEqualsTo, driver_wrapper.findElement(anotherText_locator).getText());
+	//Assert specific Locator
+	public void LocatorAssertValidation (String ThisTextIsEqualsTo, By anotherText_locator) {
+		Assert.assertEquals(ThisTextIsEqualsTo, driver_wrapper.findElement(anotherText_locator).getText());
+	}
+	//Assert current URL
+	public void CurrentURLAssertion (String CurrentUrl_Text ) {
+		Assert.assertEquals(CurrentUrl_Text, driver_wrapper.getCurrentUrl());
 	}
 	
 	public Boolean isDisplayed (By locator) {

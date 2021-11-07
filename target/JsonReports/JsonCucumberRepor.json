@@ -12,49 +12,49 @@
         "steps": [
           {
             "result": {
-              "duration": 3471647200,
+              "duration": 6425085499,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on LOGIN page Scenario",
             "match": {
-              "location": "LoginStep.user_is_on_LOGIN_page_Scenario()"
+              "location": "TC1_LoginStep.user_is_on_LOGIN_page_Scenario()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 341530200,
+              "duration": 4543178000,
               "status": "passed"
             },
             "line": 6,
             "name": "user enter userName and password",
             "match": {
-              "location": "LoginStep.user_enter_userName_and_password()"
+              "location": "TC1_LoginStep.user_enter_userName_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 193076000,
+              "duration": 262573500,
               "status": "passed"
             },
             "line": 7,
             "name": "clicks on LOGIN button",
             "match": {
-              "location": "LoginStep.clicks_on_LOGIN_button()"
+              "location": "TC1_LoginStep.clicks_on_LOGIN_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 193295000,
+              "duration": 2313849700,
               "status": "passed"
             },
             "line": 8,
             "name": "you are in products page",
             "match": {
-              "location": "LoginStep.you_are_in_products_page()"
+              "location": "TC1_LoginStep.you_are_in_products_page()"
             },
             "keyword": "Then "
           }
@@ -63,6 +63,146 @@
           {
             "line": 3,
             "name": "@LogInSauceWebSite"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Check LOGIN is not successful invalid credentials",
+        "description": "",
+        "id": "test-saucedemo-website---wizeline-qa-automation-bootcamp;check-login-is-not-successful-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2171775999,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on LOGIN page Scenario",
+            "match": {
+              "location": "TC1_LoginStep.user_is_on_LOGIN_page_Scenario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4456926001,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter userName and wrong password",
+            "match": {
+              "location": "TC2_InvalidLoginStep.user_enter_userName_and_wrong_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127691000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clicks on LOGIN button",
+            "match": {
+              "location": "TC1_LoginStep.clicks_on_LOGIN_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2057051100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "an error message is displayed",
+            "match": {
+              "location": "TC2_InvalidLoginStep.an_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@invalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Check LOGOUT is successful",
+        "description": "",
+        "id": "test-saucedemo-website---wizeline-qa-automation-bootcamp;check-logout-is-successful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2150527200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user is on LOGIN page Scenario",
+            "match": {
+              "location": "TC1_LoginStep.user_is_on_LOGIN_page_Scenario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4445699201,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter userName and password",
+            "match": {
+              "location": "TC1_LoginStep.user_enter_userName_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185761500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clicks on LOGIN button",
+            "match": {
+              "location": "TC1_LoginStep.clicks_on_LOGIN_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6537179100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User going to Logg Off",
+            "match": {
+              "location": "TC3_LogOff.User_going_to_Logg_Off()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14739400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user is on Login Page",
+            "match": {
+              "location": "TC3_LogOff.user_is_on_Login_Page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@LogOut"
           }
         ]
       }
