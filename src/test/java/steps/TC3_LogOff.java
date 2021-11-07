@@ -2,11 +2,12 @@ package steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import saucePages.LogOff_Page3;
+import saucePages.Page3_LogOff;
 
 public class TC3_LogOff {
 	
-	LogOff_Page3 LogOff_ins=new LogOff_Page3();
+	Page3_LogOff LogOff_ins=new Page3_LogOff();
+	
 	@Then("^User going to Logg Off$")
 	public void User_going_to_Logg_Off() throws Throwable {
 	    LogOff_ins.GotoSideMenu();

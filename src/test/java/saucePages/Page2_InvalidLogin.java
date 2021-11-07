@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import wrapperBase.wrapper;
 
-public class InvalidLogin_Page2 extends wrapper {
+public class Page2_InvalidLogin extends wrapper {
 	
 	
 	By UserName_Locator = By.id("user-name");

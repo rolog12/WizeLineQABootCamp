@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="35.692037">
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGIN is successful with a valid credentials" time="13.544687">
-<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
-When user enter userName and password.......................................passed
-And clicks on LOGIN button..................................................passed
-Then you are in products page...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGIN is not successful invalid credentials" time="8.813444">
-<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
-When user enter userName and wrong password.................................passed
-And clicks on LOGIN button..................................................passed
-Then an error message is displayed..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGOUT is successful" time="13.333906">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="25.215041">
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGOUT is successful" time="18.072048">
 <system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
 When user enter userName and password.......................................passed
 And clicks on LOGIN button..................................................passed
 Then User going to Logg Off.................................................passed
 And user is on Login Page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check products is sorted by price lowToHigh" time="7.142993">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then products are sorted by price lowToHigh.................................passed
+And sorted products are checked.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

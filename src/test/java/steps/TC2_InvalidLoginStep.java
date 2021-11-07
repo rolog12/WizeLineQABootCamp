@@ -4,12 +4,12 @@ import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import saucePages.InvalidLogin_Page2;
+import saucePages.Page2_InvalidLogin;
 
 public class TC2_InvalidLoginStep {
 	
 	//WebDriver driver_login;
-	InvalidLogin_Page2 InvalildLogin_ins=new InvalidLogin_Page2();
+	Page2_InvalidLogin InvalildLogin_ins=new Page2_InvalidLogin();
 	
 	@When("^user enter userName and wrong password$")
 	public void user_enter_userName_and_wrong_password() throws Exception {

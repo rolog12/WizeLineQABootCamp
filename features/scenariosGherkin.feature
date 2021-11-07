@@ -23,13 +23,14 @@ Scenario: Check LOGOUT is successful
     Then User going to Logg Off
     And user is on Login Page
     
-@SortedByPrice    
+@SortedByPrice 
 Scenario: Check products is sorted by price lowToHigh
 
     Given user is on LOGIN page Scenario
     When user enter userName and password
     And clicks on LOGIN button
     Then products are sorted by price lowToHigh
+    And sorted products are checked
     
  @addMultipleProducts
  Scenario: Check in MainPage add multiple products

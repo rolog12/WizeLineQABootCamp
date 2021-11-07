@@ -14,12 +14,8 @@ public class TC1_LoginStep {
 
 	
 	@Given("^user is on LOGIN page Scenario$")
-	public void user_is_on_LOGIN_page_Scenario() throws Throwable {
-	  
-		System.out.println("llego GIVEN login");
-		//driver_login =Login_var.chromeDriverSetUp();
-		Login_ins.setURL();
-		System.out.println("llego chrome set up");
+	public void user_is_on_LOGIN_page_Scenario() throws Throwable {	  		
+		Login_ins.setURL();		
 	}
 
 	@When("^user enter userName and password$")

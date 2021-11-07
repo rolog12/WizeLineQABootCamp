@@ -2,6 +2,8 @@ package wrapperBase;
 
 
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -16,7 +18,7 @@ public class wrapper {
 	 static WebDriver driver_wrapper;
 	
 	 
-	
+	// Set Up Chrome Browser
 	public 	WebDriver chromeDriverSetUp () {
 		
 		if (driver_wrapper==null) {
@@ -54,7 +56,7 @@ public class wrapper {
 		); 
 	}
 	
-	//Click
+	//Click Method
 	public void click (By locator) {
 		driver_wrapper.findElement(locator).click();
 	}
@@ -71,7 +73,18 @@ public class wrapper {
 	public void CurrentURLAssertion (String CurrentUrl_Text ) {
 		Assert.assertEquals(CurrentUrl_Text, driver_wrapper.getCurrentUrl());
 	}
+	//List of ElementS
+	public void listsOfElements(By Elements_locator) {
+		List<WebElement> prices=driver_wrapper.findElements(Elements_locator);
+		System.out.println("----");
+		System.out.println("List Of products Low To High");
+		for (WebElement x: prices)
+		{
+			System.out.println(x.getText());			
+		}
+	}
 	
+	//Is Displayed
 	public Boolean isDisplayed (By locator) {
 
 		try {
