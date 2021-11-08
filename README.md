@@ -1,7 +1,9 @@
 # WizeLineQABootCamp
 Technical Challenge QA Automation BootCamp WizeLine Academy - Rodrigo Garcia Colombia 
+
 This Project Contains some Test Cases to Validate FrontEnd QA Automated Steps. 
-WebSite https://www.saucedemo.com/ CUCUMBER and JUnit frameWork was used to develop this project. under POM model.
+WebSite https://www.saucedemo.com/ 
+CUCUMBER and JUnit frameWork was used to develop this project under POM model.
 Requirements:
 *Selenium libraries = org.seleniumhq.selenium / 3.10.0
 *JUnit = junit 4.11
