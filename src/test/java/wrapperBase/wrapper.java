@@ -74,15 +74,49 @@ public class wrapper {
 		Assert.assertEquals(CurrentUrl_Text, driver_wrapper.getCurrentUrl());
 	}
 	//List of ElementS
+	List<WebElement> productsSelected;
 	public void listsOfElements(By Elements_locator) {
-		List<WebElement> prices=driver_wrapper.findElements(Elements_locator);
+		productsSelected=driver_wrapper.findElements(Elements_locator);
+	}
+	
+	//List of ElementS
+		List<WebElement> CartProducts;
+		public void ElementsOnShoppingCart(By Elements_locator) {
+			CartProducts=driver_wrapper.findElements(Elements_locator);
+		}
+	
+	public void compareTowList () {
+		for (WebElement x: productsSelected)
+		{
+			for (WebElement y: CartProducts) {
+				if(x.getText()==y.getText()) {
+					//Assert.assertEquals(x.getText(),y.getText());
+					System.out.println("Product: "+x.getText()+" Match with: "+ y.getText());
+				}
+			}
+		}
+	}
+		
+		
+	public void printListElements() {
 		System.out.println("----");
-		System.out.println("List Of products Low To High");
-		for (WebElement x: prices)
+		
+		for (WebElement x: productsSelected)
 		{
 			System.out.println(x.getText());			
 		}
 	}
+	
+	public void printBasketElements() {
+		System.out.println("----");
+		
+		for (WebElement x: CartProducts)
+		{
+			System.out.println(x.getText());			
+		}
+	}
+	
+	
 	
 	//Is Displayed
 	public Boolean isDisplayed (By locator) {

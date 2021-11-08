@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="25.215041">
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGOUT is successful" time="18.072048">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.051287">
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check in MainPage add multiple products" time="22.051287">
 <system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
 When user enter userName and password.......................................passed
 And clicks on LOGIN button..................................................passed
-Then User going to Logg Off.................................................passed
-And user is on Login Page...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check products is sorted by price lowToHigh" time="7.142993">
-<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
-When user enter userName and password.......................................passed
-And clicks on LOGIN button..................................................passed
-Then products are sorted by price lowToHigh.................................passed
-And sorted products are checked.............................................passed
+Then user add multiple products.............................................passed
+And basket products are checked.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

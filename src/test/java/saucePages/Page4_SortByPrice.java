@@ -15,7 +15,8 @@ public class Page4_SortByPrice extends wrapper {
 	public void SortedByPrice () {
 		click(Sorted_locator);		
 	}
-	public void ProductSorted () {
-		listsOfElements(Elements_locator);		
+	public void ProductsChecked () {
+		listsOfElements(Elements_locator);
+		printListElements();
 	}
 }

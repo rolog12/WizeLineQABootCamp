@@ -39,6 +39,7 @@ Scenario: Check products is sorted by price lowToHigh
     When user enter userName and password
     And clicks on LOGIN button
     Then user add multiple products
+    And basket products are checked
     
  @addSauceLabsProduct
  Scenario: Check add specific product
