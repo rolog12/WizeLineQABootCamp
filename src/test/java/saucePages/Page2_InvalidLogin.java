@@ -25,7 +25,7 @@ public class Page2_InvalidLogin extends wrapper {
 		WaitAMoment(2, Pwd_Locator);
 		writeText(Pwd_Locator, IncorrectPasswordText);
 		Thread.sleep(2000);		
-		System.out.println("enter user invalid");
+		//System.out.println("enter user invalid");
 	}
 	
 	public void HardAssertion () throws Exception {

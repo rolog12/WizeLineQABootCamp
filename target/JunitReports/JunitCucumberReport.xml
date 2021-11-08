@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.051287">
-<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check in MainPage add multiple products" time="22.051287">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="94.297236">
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGIN is successful with a valid credentials" time="12.612533">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then you are in products page...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGIN is not successful invalid credentials" time="8.635097">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and wrong password.................................passed
+And clicks on LOGIN button..................................................passed
+Then an error message is displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check LOGOUT is successful" time="13.039319">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then User going to Logg Off.................................................passed
+And user is on Login Page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check products is sorted by price lowToHigh" time="6.825229">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then products are sorted by price lowToHigh.................................passed
+And sorted products are checked.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check in MainPage add multiple products" time="18.008512">
 <system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
 When user enter userName and password.......................................passed
 And clicks on LOGIN button..................................................passed
 Then user add multiple products.............................................passed
 And basket products are checked.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check add specific product" time="9.404327">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then user add Specific product..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test sauceDemo WebSite - WizeLine QA Automation BootCamp" name="Check purchase is completed" time="25.772219">
+<system-out><![CDATA[Given user is on LOGIN page Scenario........................................passed
+When user enter userName and password.......................................passed
+And clicks on LOGIN button..................................................passed
+Then user add final product.................................................passed
+And purchase is completed...................................................passed
+And navigate to Order Confirmation Page.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

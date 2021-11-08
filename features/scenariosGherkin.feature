@@ -1,3 +1,4 @@
+@WizeLineBootCamp
 Feature: Test sauceDemo WebSite - WizeLine QA Automation BootCamp
 
 @LogInSauceWebSite
